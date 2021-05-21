@@ -13,3 +13,17 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 function areaOfRectangle(l1,l2){
     return l1 * l2
 }
+
+/* EXERCISE 2
+Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
+*/
+
+function crazySum (a,b){
+    if(a===b){
+        return 3*(a + b)
+    }else{
+        return a + b
+    }
+}
+
+console.log(crazySum(3,3))
