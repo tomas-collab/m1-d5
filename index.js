@@ -112,8 +112,17 @@ function upperFirst(a){
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+function cutString(a){
+    a.pop(a)
+    a.shift(a)
+}
+
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+
+function giveMeRandom(min, max){
+    return Math.floor(Math.random()*(max-min +1)) + min
+
+}
