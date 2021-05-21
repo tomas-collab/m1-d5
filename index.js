@@ -13,6 +13,7 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 function areaOfRectangle(l1,l2){
     return l1 * l2
 }
+console.log(areaOfRectangle(4,4))
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
@@ -35,9 +36,9 @@ It should return triple their absolute difference if the given number is greater
 
 function crazyDiff(a){
     if(a > 19){
-        return 3*(a-9)
+        return 3 * Math.abs(a-19)
     }else{
-        return (a-9)
+        return Math.abs(a-19)
     }
 }
 
@@ -88,8 +89,10 @@ function reverseString(strg){
     for(let i = strg.length -1 ; i >=0; i-- ){
         reversed += strg[i]
     }
-}   return reversed
+    return reversed
+}   
 
+console.log('strive')
 
 
 /* EXERCISE 8
@@ -104,6 +107,7 @@ function upperFirst(a){
     }
     return splitted.join('')
 }
+console.log('stive')
 
 
 /* WRITE YOUR CODE HERE */
