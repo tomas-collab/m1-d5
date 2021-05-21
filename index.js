@@ -66,3 +66,15 @@ function strivify(a){
   }
 }
 
+/* EXERCISE 6
+Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
+HINT: Module Operator
+*/
+
+function check3and7(a){
+if(a%3===0 || a%7===0){
+    return "the number you provided is multiple of 3 and 7"
+}
+}
+
+console.log(check3and7(21))
