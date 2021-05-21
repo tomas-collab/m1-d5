@@ -51,3 +51,18 @@ function boundary(n){
         return true
     }
 }
+
+
+/* EXERCISE 5
+Write a function "strivify" which accepts a string.
+It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
+*/
+let b = "strive"
+function strivify(a){
+  if(a.includes("strive")){
+      return a
+  }else{
+    return b.concat(a)
+  }
+}
+
