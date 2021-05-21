@@ -78,3 +78,42 @@ if(a%3===0 || a%7===0){
 }
 
 console.log(check3and7(21))
+
+/* EXERCISE 7
+Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
+*/
+
+function reverseString(strg){
+    let reversed = ""
+    for(let i = strg.length -1 ; i >=0; i-- ){
+        reversed += strg[i]
+    }
+}   return reversed
+
+
+
+/* EXERCISE 8
+Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
+*/
+
+function upperFirst(a){
+    let  splitted = a.split('')
+    for (let i = 0;i <splitted.length; i++){
+        let j = splitted[i].charAt(0).toUpperCase()
+        splitted[i] = j + splitted.substr(1)
+    }
+    return splitted.join('')
+}
+
+
+/* WRITE YOUR CODE HERE */
+
+/* EXERCISE 9
+Write a function "cutString" to create a new string without the first and last character of a given string.
+*/
+
+/* WRITE YOUR CODE HERE */
+
+/* EXERCISE 10
+Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
+*/
