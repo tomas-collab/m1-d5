@@ -126,7 +126,12 @@ function cutString(a){
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-function giveMeRandom(min, max){
-    return Math.floor(Math.random()*(max-min +1)) + min
+function giveMeRandom(a){
+    let arr = []
+    for(i = 0;i<a;i++){let random = Math.floor(Math.random()*10)
+        arr.push(random)
+    }
+    
+    return arr
 
 }
