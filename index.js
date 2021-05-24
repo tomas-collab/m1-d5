@@ -117,8 +117,7 @@ Write a function "cutString" to create a new string without the first and last c
 */
 
 function cutString(a){
-    a.pop(a)
-    a.shift(a)
+    a.slice(1,a.length -1)
 }
 
 
